@@ -1,0 +1,11 @@
+syntax = "proto2";
+package state;
+
+option go_package = "state;state";
+option java_package = "com.ulmefors.state";
+option java_outer_classname = "State";
+
+message StateMetrics {
+    optional int64 time = 1;
+    optional float temperature = 2;
+}
